@@ -3,6 +3,7 @@ import Land from "./Land/Land.jsx";
 
 export default function App() {
   const [landNumbers, setLandNumbers] = useState([]);
+  const [inputLand, setInputLand] = useState("")
   const limit = 5000;
 
   const [renderCount, setRenderCount] = useState(0)
@@ -12,13 +13,13 @@ export default function App() {
   }, [landNumbers])
 
 
-
+  function handleInput(event) {
+    setInputLand(event.target.value)
+  }
 
   function getInput() {
-    const input = document.getElementById("input").value.trim();
-    document.getElementById("input").value = "";
-    if (input && Number(input) >= 1 && Number(input) <= limit){
-      setLandNumbers((l) => [...l, input]);
+    if (inputLand && Number(inputLand) >= 1 && Number(inputLand) <= limit){
+      setLandNumbers((l) => [...l, inputLand]);
     }else{
       alert("#1-5000 lang jusko");
     }
@@ -43,7 +44,7 @@ export default function App() {
   return (
     <>
       <header>
-        <input id="input" placeholder="Enter the Land Number"/>
+        <input onChange={handleInput} placeholder="Enter the Land Number"/>
         <button className="view" onClick={getInput}>View</button>
         <button className="random" onClick={randomLand}>Random Land</button>
         <button className="delete" onClick={deleteAll}>Delete all viewing land</button>
