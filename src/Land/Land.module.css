@@ -1,0 +1,43 @@
+.parent{
+    position: relative;
+}
+
+.parent .iframe{
+    width: 520px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.parent .xIcon{
+    position: absolute;
+    cursor: pointer;
+    right: 10px;    
+}
+
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionHolder{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.sectionHolder .name{
+    font-size: 15px;
+    color: white;
+    width: 230px;
+}
+
+.buttonHolder .previous{
+    width: 140px;
+    height: 40px;
+}
+.buttonHolder .next{
+    margin-left: 10px;
+    width: 140px;
+    height: 40px;
+}
