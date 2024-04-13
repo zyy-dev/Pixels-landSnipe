@@ -53,7 +53,6 @@ export default function App() {
       <main>
         {landNumbers.map((landNumber, index) => {
           return <Land
-                    key={index}
                     number={landNumber}
                     previous={() => addLandNumber(Number(landNumber) - 1)}
                     next={() => addLandNumber(Number(landNumber) + 1)}
