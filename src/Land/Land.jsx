@@ -8,7 +8,7 @@ export default function Land(prop) {
   useEffect(() => {
     const newUrl = `https://play.pixels.xyz/pixels/share/${prop.number}`;
     setUrl(newUrl);
-  }, [prop.number]);
+  }, []);
 
   return (
     <div className={styles.mainDiv}>
