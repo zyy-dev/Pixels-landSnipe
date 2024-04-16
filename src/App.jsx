@@ -37,10 +37,6 @@ export default function App() {
     setLandNumbers((l) => [...l, String(landNumber)]);
   }
 
-  function deleteLandNumber(index) {
-    setLandNumbers((l) => l.filter((_, i) => i !== index));
-  }
-
   return (
     <>
       <header>
@@ -51,13 +47,12 @@ export default function App() {
       </header>
 
       <main>
-        {landNumbers.map((landNumber, index) => {
+        {landNumbers.map((landNumber) => {
           
           return <Land
                     number={landNumber}
                     previous={() => addLandNumber(Number(landNumber) - 1)}
                     next={() => addLandNumber(Number(landNumber) + 1)}
-                    delete={() => deleteLandNumber(index)}
                   />
         })}
       </main>
