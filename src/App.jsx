@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import Land from "./Land/Land.jsx";
+import Land from "./component/Land.jsx";
+import './App.css'
 
 export default function App() {
   const [landNumbers, setLandNumbers] = useState([]);
