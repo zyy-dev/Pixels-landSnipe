@@ -1,5 +1,6 @@
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
+import Button from "./Button.jsx"
 import "./css/Land.css"
 
 export default function Land(prop) {
@@ -18,7 +19,8 @@ export default function Land(prop) {
       <div className="sectionHolder">
         <span className="name">{`Land Number: ${prop.number}`}</span>
         <div className="buttonHolder">
-
+          <Button title="Previous" className="previous" onClick={prop.previous}/>
+          <Button title="Next" className="next" onClick={prop.next}/>
         </div>
       </div>
     </div>

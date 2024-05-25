@@ -1,0 +1,37 @@
+button{
+    height: 45px;
+    cursor: pointer;
+    border-width: 0px;
+    font-family: "Kemco pixel", sans-serif;
+    font-size: 18px;
+    color:#28248C;
+    background-color: #e3ff37;
+    clip-path: polygon(/* top left */ 0 4px, 4px 4px, 4px 0, /* top right */ calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, /* bottom right */ 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, /* bottom left */ 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+    box-shadow: /* bottom right */ inset -4px -4px 0px rgba(0, 0, 0, 0.2), /* top left */ inset 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+
+.view{
+    margin-left: -8px;
+    width: 70px;
+}
+
+.random{
+    margin-left: 340px;
+    width: 180px;
+}
+
+.delete{
+    margin-left: 20px;
+    width: 250px;
+}
+
+.previous{
+    width: 140px;
+    height: 40px;
+}
+.next{
+    margin-left: 10px;
+    width: 140px;
+    height: 40px;
+}
+

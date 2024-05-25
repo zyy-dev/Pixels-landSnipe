@@ -21,7 +21,6 @@
 .mainDiv{
     display: flex;
     flex-direction: column;
-
 }
 
 .sectionHolder{
@@ -36,12 +35,3 @@
     width: 230px;
 }
 
-/* .buttonHolder .previous{
-    width: 140px;
-    height: 40px;
-}
-.buttonHolder .next{
-    margin-left: 10px;
-    width: 140px;
-    height: 40px;
-} */

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Land from "./component/Land.jsx";
+import Button from "./component/Button.jsx"
 import './App.css'
 
 export default function App() {
@@ -42,9 +43,9 @@ export default function App() {
     <>
       <header>
         <input onChange={handleInput} placeholder="Enter the Land Number"/>
-        <button className="view" onClick={getInput}>View</button>
-        <button className="random" onClick={randomLand}>Random Land</button>
-        <button className="delete" onClick={deleteAll}>Delete all viewing land</button>
+        <Button title="View" className="view" onClick={getInput}/>
+        <Button title="Random" className="random" onClick={randomLand}/>
+        <Button title="Delete all Viewing Land" className="delete" onClick={deleteAll}/>
       </header>
 
       <main>
