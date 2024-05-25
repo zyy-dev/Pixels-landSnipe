@@ -1,1 +1,18 @@
+input{
+    font-family: "Kemco pixel", sans-serif;
+    color: white;
+    background-color: #0e1b27;
+    border-width: 0px;
+    text-indent: 20px;
+    width: 300px;
+    height: 43px;
+    margin-left: 50px;
+    clip-path: polygon(/* top left */ 0 4px, 4px 4px, 4px 0, /* top right */ calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, /* bottom right */ 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, /* bottom left */ 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+    box-shadow: /* bottom right */ inset -4px -4px 0px rgba(0, 0, 0, 0.2), /* top left */ inset 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+
+input:focus{
+    color: white;
+    outline: none;
+}
 
